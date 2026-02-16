@@ -1,0 +1,30 @@
+[project]
+name = "search-summarization-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Robbity", email = "robbielaughlen@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "docx2txt>=0.9",
+    "langchain-community>=0.4.1",
+    "langchain-text-splitters>=1.1.0",
+    "pymupdf>=1.27.1",
+]
+
+[project.scripts]
+search-summarization-agent = "search_summarization_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.9.30,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "deepagents>=0.4.1",
+    "langchain>=1.2.10",
+    "langchain-ollama>=1.0.1",
+    "ruff>=0.15.1",
+]

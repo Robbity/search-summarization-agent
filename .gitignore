@@ -4,3 +4,11 @@
 
 # LangGraph
 .langgraph_api/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Ruff cache
+.ruff_cache/
